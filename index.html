@@ -263,6 +263,16 @@
             margin: 0;
         }
 
+        /* TEXTO JUSTIFICADO PARA TARJETAS LARGAS */
+        .card-text-justified {
+            margin-top: 0.8rem; 
+            color: var(--muted); 
+            font-size: 0.9rem; 
+            line-height: 1.6;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
         /* LISTAS PARA HERRAMIENTAS Y HABILIDADES */
         .skills-container {
             display: flex;
@@ -306,6 +316,29 @@
         .tool-item:hover { background: rgba(255,255,255,0.05); }
         .item-icon { font-size: 1.5rem; }
         .tool-name strong { display: block; color: var(--text); }
+
+        /* ESTILOS PARA PROYECTOS */
+        .btn-project {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin-top: 1.2rem;
+            padding: 0.5rem 1rem;
+            background: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            border-radius: 0.4rem;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-project:hover {
+            background: var(--accent);
+            color: white;
+            transform: translateY(-2px);
+        }
 
         /* ESTILOS DEL FORMULARIO DE CONTACTO */
         .contact-form {
@@ -449,6 +482,7 @@
             <li><a href="#perfil">Perfil</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#formacion">Formación</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#contacto-form">Contacto</a></li>
           </ul>
@@ -523,7 +557,7 @@
                 <span class="hours-badge">400 Horas</span>
               </div>
               <p class="card-subtitle">CFGM Sistemas Microinformáticos y Redes.</p>
-              <p style="margin-top: 0.8rem; color: var(--muted); font-size: 0.9rem; line-height: 1.6;">Prácticas en entorno real aplicando conocimientos de mantenimiento de hardware, configuración de redes locales y soporte a sistemas.</p>
+              <p class="card-text-justified">Prácticas en entorno real aplicando conocimientos de mantenimiento de hardware, configuración de redes locales y soporte a sistemas.</p>
             </div>
 
             <div class="card">
@@ -535,7 +569,7 @@
                 <span class="hours-badge">100 Horas</span>
               </div>
               <p class="card-subtitle">CFGM Sistemas Microinformáticos y Redes.</p>
-              <p style="margin-top: 0.8rem; color: var(--muted); font-size: 0.9rem; line-height: 1.6;">Ampliación de prácticas enfocadas en la consolidación de competencias técnicas y atención de incidencias en el entorno empresarial.</p>
+              <p class="card-text-justified">Ampliación de prácticas enfocadas en la consolidación de competencias técnicas y atención de incidencias en el entorno empresarial.</p>
             </div>
 
           </div>
@@ -554,7 +588,7 @@
               <h3>Educación Secundaria Obligatoria</h3>
               <p style="color: var(--muted); font-size: 0.9rem;">Formación académica básica.</p>
             </div>
-	    <div class="card">
+            <div class="card">
               <div class="card-meta">Formación Bilib</div>
               <h3>Sistemas Operativos</h3>
               <ul style="color: var(--muted); font-size: 0.9rem; padding-left: 1.2rem; margin-top: 0.5rem;">
@@ -574,15 +608,48 @@
           </div>
         </section>
 
+        <section id="proyectos" class="section" style="margin-top: 3rem;">
+          <h2 class="section-title">Proyectos Personales</h2>
+          <div class="card-grid" style="grid-template-columns: 1fr;">
+            
+            <div class="card">
+              <div class="card-meta">Desarrollo Full-Stack / Lua / JS</div>
+              <h3>Sistema Avanzado de Personalización de Objetos en Fivem</h3>
+              <p class="card-text-justified">
+                Desarrollo de un ecosistema compuesto por dos recursos interconectados (`nebula_personalizacion` y `nebula_imghost`) para servidores de Roleplay. Este sistema soluciona el problema de depender de enlaces externos para las imágenes dentro del juego, permitiendo una inmersión completa al simular tiendas de diseño reales.
+              </p>
+              
+              <ul style="color: var(--muted); font-size: 0.9rem; margin-top: 1rem; padding-left: 1.2rem; text-align: left;">
+                <li style="margin-bottom: 0.5rem;"><strong>Microservicio NUI (`nebula_imghost`):</strong> Implementación de una interfaz gráfica (HTML/JS) que intercepta el portapapeles (Ctrl+V). Utiliza un <code>&lt;canvas&gt;</code> invisible para redimensionar dinámicamente la imagen y codificarla a Base64 WebP, optimizando drásticamente la carga de la base de datos.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Backend y Lógica (`nebula_personalizacion`):</strong> Script en Lua conectado a MySQL. Gestiona permisos dinámicos por rango de trabajo, creación de zonas de interacción (Raycasting con <code>ox_target</code>), consumo de inventario y un panel de administración para aprobar/denegar diseños.</li>
+                <li><strong>Intercomunicación:</strong> Uso avanzado de <code>exports</code> y <code>NUICallbacks</code> para asegurar la comunicación fluida y segura entre la interfaz web asíncrona y la lógica del servidor.</li>
+              </ul>
+              
+              <div class="skills-container" style="margin-bottom: 0; gap: 0.5rem; margin-top: 1.5rem;">
+                <span class="skill-tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">Lua</span>
+                <span class="skill-tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">JavaScript</span>  
+                <span class="skill-tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">HTML5</span>
+                <span class="skill-tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">CSS</span>
+		<span class="skill-tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">MySQL</span>
+              </div>
+              
+              <a href="https://github.com/TU_USUARIO" target="_blank" class="btn-project">
+                Ver repositorios en GitHub ↗
+              </a>
+            </div>
+
+          </div>
+        </section>
+
         <section id="habilidades" class="section" style="margin-top: 3rem;">
           <h2 class="section-title">Habilidades Técnicas y Herramientas</h2>
           
           <h3 style="color: var(--text); font-size: 1.2rem; margin-bottom: 1rem;">Áreas de Conocimiento</h3>
           <div class="skills-container">
             <span class="skill-tag">Mantenimiento Informático</span>
-            <span class="skill-tag">Desarrollo Web</span>
+            <span class="skill-tag">Desarrollo Full-Stack (Básico)</span>
             <span class="skill-tag">Sistemas Operativos</span>
-            <span class="skill-tag">Ofimática</span>
+            <span class="skill-tag">Gestión de Bases de Datos</span>
             <span class="skill-tag">Servicios en Red</span>
             <span class="skill-tag">Seguridad Informática</span>
           </div>
@@ -602,7 +669,7 @@
 
             <div class="tool-item">
               <span class="item-icon">🐘</span>
-              <div class="tool-name"><strong>XAMPP</strong></div>
+              <div class="tool-name"><strong>XAMPP / MySQL</strong></div>
             </div>
 
             <div class="tool-item">
@@ -612,17 +679,12 @@
 
             <div class="tool-item">
               <span class="item-icon">☕</span>
-              <div class="tool-name"><strong>NetBeans</strong></div>
+              <div class="tool-name"><strong>NetBeans / VS Code</strong></div>
             </div>
 
             <div class="tool-item">
               <span class="item-icon">🤝</span>
               <div class="tool-name"><strong>TeamViewer / Anydesk</strong></div>
-            </div>
-
-            <div class="tool-item">
-              <span class="item-icon">📊</span>
-              <div class="tool-name"><strong>Microsoft Office</strong></div>
             </div>
 
           </div>

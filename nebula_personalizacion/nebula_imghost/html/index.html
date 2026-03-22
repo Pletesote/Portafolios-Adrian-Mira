@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nebula Image Host NUI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="upload-container" class="hidden">
+        <div class="upload-box">
+            <div class="icon">📋</div>
+            <h2>Pegar Imagen</h2>
+            <p>Pulsa <kbd>Ctrl</kbd> + <kbd>V</kbd> para subir tu diseño.</p>
+            <p class="subtext">(Formato compatible: PNG, JPG, WEBP)</p>
+            
+            <div id="status" class="hidden">
+                <div class="spinner"></div>
+                <p>Subiendo a la nube...</p>
+            </div>
+
+            <button id="cancel-btn">Cancelar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

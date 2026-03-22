@@ -115,7 +115,15 @@
         .hero-title { font-size: 3rem; margin: 0; line-height: 1.1; }
         .hero-title span { color: var(--accent); }
 
-        .hero-text { color: var(--muted); font-size: 1.1rem; margin: 1.5rem 0; }
+        /* TEXTO DEL PERFIL JUSTIFICADO */
+        .hero-text { 
+            color: var(--muted); 
+            font-size: 1.15rem; 
+            line-height: 1.7; 
+            margin: 1.5rem 0; 
+            text-align: justify; 
+            text-justify: inter-word; 
+        }
 
         .hero-card {
           background: linear-gradient(135deg, rgba(31, 41, 55, 0.4), rgba(17, 24, 39, 0.4));
@@ -421,10 +429,10 @@
           .hero-grid { grid-template-columns: 1fr; text-align: center; }
           .hero-kicker { justify-content: center; }
           .hero-title { font-size: 2.2rem; }
+          .hero-text { text-align: left; } 
           .main-nav ul { flex-wrap: wrap; justify-content: center; }
           .contact-list li { justify-content: center; flex-direction: column; text-align: center; gap: 0.5rem;}
           
-          /* Ajustes de footer para móvil */
           .footer-inner { flex-direction: column; text-align: center; justify-content: center; }
           .footer-brand { align-items: center; }
           .footer-social { justify-content: center; margin-top: 0.5rem; }
@@ -546,10 +554,13 @@
               <h3>Educación Secundaria Obligatoria</h3>
               <p style="color: var(--muted); font-size: 0.9rem;">Formación académica básica.</p>
             </div>
-            <div class="card">
+	    <div class="card">
               <div class="card-meta">Formación Bilib</div>
-              <h3>Administración de Sistemas Linux</h3>
-              <p style="color: var(--muted); font-size: 0.9rem;">Incluye curso completo de Ubuntu versión 18.04 LTS.</p>
+              <h3>Sistemas Operativos</h3>
+              <ul style="color: var(--muted); font-size: 0.9rem; padding-left: 1.2rem; margin-top: 0.5rem;">
+                <li>Curso de Administración de sistemas Linux.</li>
+                <li>Curso completo de Ubuntu versión 18.04 LTS.</li>
+              </ul>
             </div>
             <div class="card">
               <div class="card-meta">Formación Midudev</div>
@@ -618,7 +629,7 @@
         </section>
 
         <section id="contacto-form" class="section" style="margin-top: 3rem;">
-          <h2 class="section-title">Envíame un mensaje</h2>
+          <h2 class="section-title">Contacto</h2>
           <div class="card" style="max-width: 600px; margin: 0 auto;">
             
             <form action="https://formspree.io/f/xkoqloez" method="POST" class="contact-form">

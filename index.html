@@ -199,12 +199,12 @@
             transition: all 0.3s ease;
             margin-top: 1.5rem;
             cursor: none;
+            will-change: transform;
         }
 
         .btn-download-cv:hover {
             background: var(--accent);
             color: white;
-            transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
         }
 
@@ -268,6 +268,7 @@
         .form-group label { font-size: 0.9rem; color: var(--muted); font-weight: 500; }
         .form-group input, .form-group textarea { background: rgba(3, 7, 18, 0.5); border: 1px solid var(--border); padding: 0.8rem 1rem; border-radius: 0.5rem; color: var(--text); font-family: inherit; font-size: 0.95rem; transition: border-color 0.3s, box-shadow 0.3s; cursor: none; }
         .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2); }
+        
         .btn-submit { background: var(--accent); color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 0.5rem; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.3s, transform 0.2s; margin-top: 0.5rem; cursor: none; }
         .btn-submit:hover { background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4); }
 
@@ -544,7 +545,7 @@
                 <label for="message">Mensaje</label>
                 <textarea id="message" name="message" rows="4" required placeholder="¿En qué te puedo ayudar?"></textarea>
               </div>
-              <button type="submit" class="btn-submit magnetic-btn">Enviar Mensaje</button>
+              <button type="submit" class="btn-submit">Enviar Mensaje</button>
             </form>
             
           </div>
@@ -648,15 +649,15 @@
             window.addEventListener("scroll", reveal);
             reveal(); // Llamar una vez al inicio
 
-            // 4. BOTÓN MAGNÉTICO
+            // 4. BOTÓN MAGNÉTICO MATEMÁTICA CORREGIDA
             const magneticBtns = document.querySelectorAll('.magnetic-btn');
             magneticBtns.forEach(btn => {
                 btn.addEventListener('mousemove', function(e) {
                     const position = btn.getBoundingClientRect();
-                    const x = e.pageX - position.left - position.width / 2;
-                    const y = e.pageY - position.top - position.height / 2;
+                    const x = e.clientX - position.left - position.width / 2;
+                    const y = e.clientY - position.top - position.height / 2;
                     
-                    btn.style.transform = `translate(${x * 0.3}px, ${y * 0.5}px)`;
+                    btn.style.transform = `translate(${x * 0.2}px, ${y * 0.3}px)`;
                 });
                 
                 btn.addEventListener('mouseout', function(e) {

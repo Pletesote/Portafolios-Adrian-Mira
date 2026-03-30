@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Adrián Mira, Técnico en Sistemas Microinformáticos y Redes (SMR) y Desarrollador Web.">
     <title>Adrián Mira | Técnico SMR</title>
     
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
-
+    <meta property="og:title" content="Adrián Mira | Técnico SMR">
+    <meta property="og:description" content="Portafolio profesional de Adrián Mira. Sistemas, Redes y Desarrollo Web.">
+    <meta property="og:image" content="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    
     <style>
         /* VARIABLES MODERNAS */
         :root {
@@ -36,6 +40,21 @@
           line-height: 1.5;
           overflow-x: hidden;
         }
+
+        /* CLASES UTILITARIAS */
+        .mt-1-5 { margin-top: 1.5rem; }
+        .mt-2 { margin-top: 2rem; }
+        .mt-3 { margin-top: 3rem; }
+        .mb-0-5 { margin-bottom: 0.5rem; }
+        .mb-1-5 { margin-bottom: 1.5rem; }
+        .card-desc { color: var(--muted); font-size: 0.9rem; }
+        .list-spaced { color: var(--muted); font-size: 0.9rem; padding-left: 1.2rem; margin-top: 0.5rem; }
+        .grid-1 { grid-template-columns: 1fr; }
+        .project-list { color: var(--muted); font-size: 0.9rem; margin-top: 1rem; padding-left: 1.2rem; text-align: left; }
+        .skills-project { margin-bottom: 0; gap: 0.5rem; margin-top: 1.5rem; }
+        .skill-tag-sm { font-size: 0.75rem; padding: 0.2rem 0.6rem; }
+        .skills-title { color: var(--text); font-size: 1.2rem; margin-bottom: 1rem; }
+        .contact-card { max-width: 600px; margin: 0 auto; }
 
         /* ANIMACIONES CSS NATIVAS */
         .reveal {
@@ -196,7 +215,6 @@
             font-size: 1rem;
             font-weight: 600;
             transition: all 0.3s ease;
-            margin-top: 1.5rem;
             cursor: none;
             will-change: transform;
         }
@@ -337,20 +355,20 @@
 
               <p class="hero-text">Persona responsable, proactiva y con gran capacidad de aprendizaje. Adaptable al trabajo en equipo y enfocada en la mejora continua de mis competencias técnicas y resolución de problemas.</p>
               
-              <div class="skills-container" style="margin-top: 1.5rem;">
+              <div class="skills-container mt-1-5">
                   <span class="skill-tag">Disponibilidad para viajar</span>
                   <span class="skill-tag">Habilidades comunicativas</span>
                   <span class="skill-tag">Trabajo en equipo</span>
                   <span class="skill-tag">Incorporación inmediata</span>
               </div>
 
-              <a href="https://portafolios-adrianmira.vercel.app/CV_Adrian_Mira.pdf" target="_blank" rel="noopener noreferrer" class="btn-download-cv magnetic-btn">
+              <a href="https://portafolios-adrianmira.vercel.app/CV_Adrian_Mira.pdf" target="_blank" rel="noopener noreferrer" class="btn-download-cv magnetic-btn mt-1-5">
                   <span style="font-size: 1.2rem;">📄</span> Descargar CV en PDF
               </a>
             </div>
             
             <aside class="hero-card contact-info animate-hero-right" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
-              <div class="card-meta" style="margin-bottom: 1.5rem;">Contacto e Información</div>
+              <div class="card-meta mb-1-5">Contacto e Información</div>
               <ul class="contact-list">
                 <li>
                   <div class="contact-icon">📞</div>
@@ -398,45 +416,56 @@
 
           </div>
         </section>
+	<section id="formacion" class="section mt-3">
+  <h2 class="section-title reveal">Formación Académica</h2>
+  
+  <div class="card-grid">
+    
+    <div class="card reveal" data-tilt data-tilt-max="4" data-tilt-glare data-tilt-max-glare="0.1">
+      <div class="card-meta">2019 - 2024</div>
+      <h3>Educación Secundaria Obligatoria</h3>
+      <p class="card-desc">Educación Secundaria Obligatoria.</p>
+    </div>
 
-        <section id="formacion" class="section" style="margin-top: 3rem;">
-          <h2 class="section-title reveal">Formación Académica</h2>
-          <div class="card-grid">
-            <div class="card reveal" data-tilt data-tilt-max="4" data-tilt-glare data-tilt-max-glare="0.1">
-              <div class="card-meta">2024 - 2026</div>
-              <h3>CFGM Sistemas Microinformáticos y Redes</h3>
-              <p style="color: var(--muted); font-size: 0.9rem;">Formación profesional de grado medio.</p>
-            </div>
-          </div>
+    <div class="card reveal" data-tilt data-tilt-max="4" data-tilt-glare data-tilt-max-glare="0.1">
+      <div class="card-meta">2024 - 2026</div>
+      <h3>CFGM Sistemas Microinformáticos y Redes</h3>
+      <p class="card-desc">Formación profesional de grado medio.</p>
+    </div>
+    
+  </div> </section> 
+    
+  </div> </section>
           
-          <h2 class="section-title reveal" style="margin-top: 3rem;">Cursos y Certificaciones</h2>
+          <h2 class="section-title reveal mt-3">Cursos y Certificaciones</h2>
           <div class="card-grid">
             <div class="card reveal" data-tilt data-tilt-max="4" data-tilt-glare data-tilt-max-glare="0.1">
               <div class="card-meta">Formación Bilib</div>
               <h3>Sistemas Operativos</h3>
-              <ul style="color: var(--muted); font-size: 0.9rem; padding-left: 1.2rem; margin-top: 0.5rem;">
+              <ul class="list-spaced">
                 <li>Curso de Administración de sistemas Linux.</li>
                 <li>Curso completo de Ubuntu versión 18.04 LTS.</li>
               </ul>
             </div>
+            
             <div class="card reveal" data-tilt data-tilt-max="4" data-tilt-glare data-tilt-max-glare="0.1">
               <div class="card-meta">Formación Midudev</div>
               <h3>Desarrollo y Tecnologías Web</h3>
-              <ul style="color: var(--muted); font-size: 0.9rem; padding-left: 1.2rem; margin-top: 0.5rem;">
+              <ul class="list-spaced">
                 <li>Curso de CSS desde Cero.</li>
                 <li>Introducción a la IA para Developers.</li>
                 <li>Curso de Astro y Headless CMS.</li>
                 <li>Curso de Python desde Cero.</li>
                 <li>Curso de GSAP desde Cero.</li>
-		<li>Curso de Desarrollo Web con IA.</li>
+                <li>Curso de Desarrollo Web con IA.</li>
               </ul>
             </div>
           </div>
         </section>
 
-        <section id="proyectos" class="section" style="margin-top: 3rem;">
+        <section id="proyectos" class="section mt-3">
           <h2 class="section-title reveal">Proyectos Personales</h2>
-          <div class="card-grid" style="grid-template-columns: 1fr;">
+          <div class="card-grid grid-1">
             
             <div class="card reveal" data-tilt data-tilt-max="2" data-tilt-glare data-tilt-max-glare="0.05">
               <div class="card-meta">Desarrollo Full-Stack / Lua / JS</div>
@@ -445,19 +474,19 @@
                 Desarrollo de un ecosistema compuesto por dos recursos interconectados (`nebula_personalizacion` y `nebula_imghost`) para servidores de Roleplay. Este sistema soluciona el problema de depender de enlaces externos para las imágenes dentro del juego, permitiendo una inmersión completa al simular tiendas de diseño reales.
               </p>
               
-              <ul style="color: var(--muted); font-size: 0.9rem; margin-top: 1rem; padding-left: 1.2rem; text-align: left;">
-                <li style="margin-bottom: 0.5rem;"><strong>Microservicio NUI (`nebula_imghost`):</strong> Implementación de una interfaz gráfica (HTML/JS) que intercepta el portapapeles (Ctrl+V). Utiliza un <code>&lt;canvas&gt;</code> invisible para redimensionar dinámicamente la imagen y codificarla a Base64 WebP, optimizando drásticamente la carga de la base de datos.</li>
-                <li style="margin-bottom: 0.5rem;"><strong>Backend y Lógica (`nebula_personalizacion`):</strong> Script en Lua conectado a MySQL. Gestiona permisos dinámicos por rango de trabajo, creación de zonas de interacción (Raycasting con <code>ox_target</code>), consumo de inventario y un panel de administración para aprobar/denegar diseños.</li>
-                <li style="margin-bottom: 0.5rem;"><strong>Modo Developer e Integración:</strong> El script incluye un entorno de desarrollo estructurado que separa la administración técnica del rol de los jugadores (IC), manteniendo el panel de monitoreo activo tras reinicios y enviando logs detallados del admin menu de forma invisible para los usuarios.</li>
+              <ul class="project-list">
+                <li class="mb-0-5"><strong>Microservicio NUI (`nebula_imghost`):</strong> Implementación de una interfaz gráfica (HTML/JS) que intercepta el portapapeles (Ctrl+V). Utiliza un <code>&lt;canvas&gt;</code> invisible para redimensionar dinámicamente la imagen y codificarla a Base64 WebP, optimizando drásticamente la carga de la base de datos.</li>
+                <li class="mb-0-5"><strong>Backend y Lógica (`nebula_personalizacion`):</strong> Script en Lua conectado a MySQL. Gestiona permisos dinámicos por rango de trabajo, creación de zonas de interacción (Raycasting con <code>ox_target</code>), consumo de inventario y un panel de administración para aprobar/denegar diseños.</li>
+                <li class="mb-0-5"><strong>Modo Developer e Integración:</strong> El script incluye un entorno de desarrollo estructurado que separa la administración técnica del rol de los jugadores (IC), manteniendo el panel de monitoreo activo tras reinicios y enviando logs detallados del admin menu de forma invisible para los usuarios.</li>
                 <li><strong>Intercomunicación:</strong> Uso avanzado de <code>exports</code> y <code>NUICallbacks</code> para asegurar la comunicación fluida y segura entre la interfaz web asíncrona y la lógica del servidor.</li>
               </ul>
               
-              <div class="skills-container" style="margin-bottom: 0; gap: 0.5rem; margin-top: 1.5rem;">
-                <span class="skill-tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">Lua</span>
-                <span class="skill-tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">JavaScript</span>  
-                <span class="skill-tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">HTML5</span>
-                <span class="skill-tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">CSS</span>
-                <span class="skill-tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">MySQL</span>
+              <div class="skills-container skills-project">
+                <span class="skill-tag skill-tag-sm">Lua</span>
+                <span class="skill-tag skill-tag-sm">JavaScript</span>  
+                <span class="skill-tag skill-tag-sm">HTML5</span>
+                <span class="skill-tag skill-tag-sm">CSS</span>
+                <span class="skill-tag skill-tag-sm">MySQL</span>
               </div>
               
               <a href="https://github.com/Pletesote/Portafolios-Adrian-Mira/tree/main/nebula_personalizacion" target="_blank" rel="noopener noreferrer" class="btn-project">
@@ -468,10 +497,10 @@
           </div>
         </section>
 
-        <section id="habilidades" class="section" style="margin-top: 3rem;">
+        <section id="habilidades" class="section mt-3">
           <h2 class="section-title reveal">Habilidades Técnicas y Herramientas</h2>
           
-          <h3 class="reveal" style="color: var(--text); font-size: 1.2rem; margin-bottom: 1rem;">Áreas de Conocimiento</h3>
+          <h3 class="reveal skills-title">Áreas de Conocimiento</h3>
           <div class="skills-container reveal">
             <span class="skill-tag">Desarrollo Full-Stack Junior</span>
             <span class="skill-tag">Gestión de Bases de Datos</span>
@@ -487,7 +516,7 @@
             <span class="skill-tag">Soporte Ofimático</span>
           </div>
 
-          <h3 class="reveal" style="color: var(--text); font-size: 1.2rem; margin-bottom: 1rem; margin-top: 2rem;">Software y Herramientas</h3>
+          <h3 class="reveal skills-title mt-2">Software y Herramientas</h3>
           <div class="tools-list">
             
             <div class="tool-item reveal">
@@ -523,9 +552,9 @@
           </div>
         </section>
 
-        <section id="contacto-form" class="section" style="margin-top: 3rem;">
+        <section id="contacto-form" class="section mt-3">
           <h2 class="section-title reveal">Contacto</h2>
-          <div class="card reveal" style="max-width: 600px; margin: 0 auto;" data-tilt data-tilt-max="2" data-tilt-glare data-tilt-max-glare="0.05">
+          <div class="card reveal contact-card" data-tilt data-tilt-max="2" data-tilt-glare data-tilt-max-glare="0.05">
             
             <form action="https://formspree.io/f/xkoqloez" method="POST" class="contact-form">
               <div class="form-group">
@@ -563,7 +592,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             LinkedIn
           </a>
-<a href="https://github.com/adrianmiratech" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/adrianmiratech" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
             GitHub
           </a>
@@ -600,7 +629,7 @@
                 let word = words[i].split("");
                 const loopTyping = function() {
                     if (word.length > 0) {
-                        document.getElementById('typewriter-text').innerHTML += word.shift();
+                        document.getElementById('typewriter-text').textContent += word.shift();
                     } else {
                         setTimeout(deletingEffect, 2000);
                         return false;
@@ -615,7 +644,7 @@
                 const loopDeleting = function() {
                     if (word.length > 0) {
                         word.pop();
-                        document.getElementById('typewriter-text').innerHTML = word.join("");
+                        document.getElementById('typewriter-text').textContent = word.join("");
                     } else {
                         if (words.length > (i + 1)) {
                             i++;
@@ -652,7 +681,7 @@
 
             revealElements.forEach(el => observer.observe(el));
 
-            // 4. BOTÓN MAGNÉTICO MATEMÁTICA
+            // 4. BOTÓN MAGNÉTICO MATEMÁTICO
             const magneticBtns = document.querySelectorAll('.magnetic-btn');
             magneticBtns.forEach(btn => {
                 btn.addEventListener('mousemove', function(e) {
